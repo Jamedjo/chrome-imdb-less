@@ -1,18 +1,20 @@
 {
-   "background_page": "global.html",
-   "content_scripts": [ {
-      "css": [ "imdblite.css" ],
-      "js": [ "jquery.min.js", "spin.js", "adjustmarkup.js" ],
-      "matches": [ "*://*.imdb.com/*" ]
-   } ],
-   "description": "The goodness of IMDb, with less clutter.",
-   "icons": {
-      "128": "Icon-128.png",
-      "16": "Icon-16.png",
-      "48": "Icon-48.png"
-   },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCsvyxEgX3zGLwZAeQ/oMB+NO0JiWxCmmiUg+IUQvWLwjZvbKgTCV3PtD+52dyWIQlrh1wFpP02xPgMAwg2Qwem1IZt23Nytrrptd0iCgQpITDFn77ubyXLcn4Ap1Gh8AxJRU9ncgdOliDwygxoTZTiEoIerkIb+dIjJGE7oLWhfwIDAQAB",
-   "name": "Less IMDb",
-   "update_url": "http://clients2.google.com/service/update2/crx",
-   "version": "1.2.2"
+  "name": "Less IMDb",
+  "version": "1.2.3",
+  "manifest_version": 2,
+  "description": "The goodness of IMDb, with less clutter.",
+  "icons": {
+     "128": "Icon-128.png",
+     "16": "Icon-16.png",
+     "48": "Icon-48.png"
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "web_accessible_resources": [ "assets/less-imdb-control-icon.png"],
+  "content_scripts": [ {
+     "css": [ "imdblite.css" ],
+     "js": [ "jquery.min.js", "spin.js", "adjustmarkup.js" ],
+     "matches": [ "*://*.imdb.com/*" ]
+  } ]
 }

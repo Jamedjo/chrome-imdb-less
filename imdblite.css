@@ -78,6 +78,7 @@ body.less-imdb table#name-overview-widget-layout h1.header {
 		50% 0%, 
 		50% 100%, 
 		from(#f9f9f9), to(#efefef));
+	overflow: hidden;
 }
 
 body.less-imdb #main_nav {
@@ -197,7 +198,7 @@ body.less-imdb table#title-overview-widget-layout td {
 body.less-imdb table#title-overview-widget-layout {
 	border-collapse:collapse !important;
 }
-body.less-imdb div.star-box {
+body.less-imdb div.gradient-box {
 	width: auto !important;
 	margin-left: -12px !important;
 	margin-right: -12px !important;
@@ -211,6 +212,17 @@ body.less-imdb div.star-box {
 	border-left: none !important;
 	border-right: none !important;
 }
+
+body.less-imdb .giga-star.star-box .star-box-giga-star {
+	float: none;
+	margin-top: -8px;
+}
+
+body.less-imdb .star-box {
+	border-style: none;
+	padding: 0px 10px 0px 100px;
+}
+
 body.less-imdb div.star-box-details {
 	width: 270px !important;
 	clear: both;
@@ -298,16 +310,33 @@ body.less-imdb #img_primary a:hover img {
 body.less-imdb .writer-director {
 	padding: 0 20px 8px;
 }
+
+body.less-imdb #director-box{
+	font-weight: normal;
+	font-size: 10px;
+	clear: both;
+	/*margin-top: -25px;*/
+	float: right;
+}
+
+body.less-imdb #director-box .writer-director{
+    padding: 0px 0px 0px;
+}
+
+body.less-imdb #director-box .writer-director h4.inline{
+	font-size: 11px;
+}
+
 span.nobr {
 	white-space: pre !important;
 }
 /* Remove the rating system. */
-div.star-box-rating-widget {
+body.less-imdb div.star-box-rating-widget {
 	display: none;
 }
-div.star-box-giga-star {
+/*body.less-imdb div.star-box-giga-star {
 	display: none !important;
-}
+}*/
 /* Make it more subtle */
 body.less-imdb div.article,
 body.less-imdb #maindetails_sidebar_top > div {
@@ -573,7 +602,6 @@ body.less-imdb div#maindetails_center_bottom {
 	text-indent: -9999px;
 	overflow: hidden;
 	display: block;
-	background: url(chrome-extension://necddehinbndjblnhmgcodpobjfpblle/less-imdb-control-icon.png) no-repeat left top;
 	width: 46px;
 	height: 15px;
 }

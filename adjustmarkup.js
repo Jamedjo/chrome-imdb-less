@@ -28,6 +28,7 @@ $('html').addClass('webkit');
 
 // ######### ADD MENU  ######### //
 $('<div id="less-imdb-control"><span class="label">Less IMDb</span><div id="imdb-controls"><div id="on" class="imdb-toggle selected">On<div class="radio-outer"><div class="radio-inner"></div></div></div><div id="off" class="imdb-toggle">Off<div class="radio-outer"><div class="radio-inner"></div></div></div></div></div>').appendTo('body#styleguide-v2');
+$('#less-imdb-control .label').css('background', 'url('+chrome.extension.getURL('assets/less-imdb-control-icon.png')+') no-repeat left top');
 
 var firstRun = true;	
 
@@ -81,14 +82,17 @@ function modifyPage() {
 			var alldivs = bio + movie + awards + photos;
 			$('#maindetails_sidebar_top').prepend(alldivs);
 			
+			$("#maindetails_sidebar_top .star-box").addClass("gradient-box").removeClass("star-box giga-star")
+			
 			//Moving things around for the alternate layout
-			$('#maindetails_sidebar_top #overview-top .infobar').prependTo('#maindetails_sidebar_top > div.movie');
+			$('#maindetails_sidebar_top #overview-top .infobar').appendTo('#maindetails_sidebar_top > div.movie');
 			$('#maindetails_sidebar_top h1.header').prependTo('#maindetails_sidebar_top > div.movie');
 			$('#maindetails_sidebar_top #overview-top .infobar').prependTo('#maindetails_sidebar_top > div.bio');
 			$('#maindetails_sidebar_top h1.header').prependTo('#maindetails_sidebar_top > div.bio');
-			//$('#maindetails_sidebar_top .highlighted').appendTo('#maindetails_sidebar_top div.star-box');
+			$('#maindetails_sidebar_top .highlighted').appendTo('#maindetails_sidebar_top div.star-box');
 			//$('#maindetails_sidebar_top .highlighted').appendTo('#maindetails_sidebar_top #name-overview div.txt-block');
-			
+			$('#maindetails_sidebar_top h1.header').after('<div class="star-box giga-star"></div>');
+			$("#maindetails_sidebar_top .star-box-giga-star").prependTo('#maindetails_sidebar_top > div.movie > div.giga-star');
 			//Save copy of writer/director/castandcrew
 			var castCrew = $("#main div.see-more a:contains('Full cast and crew')").parent('.see-more').html();
 			var writerCreator = $(".txt-block > h4:contains('Writer:'), .txt-block > h4:contains('Writers:'),.txt-block > h4:contains('Creator:'), .txt-block > h4:contains('Creators:')").parent('.txt-block').html();
@@ -116,9 +120,13 @@ function modifyPage() {
 			$(".txt-block > h4:contains('Director:'), .txt-block > h4:contains('Directors:')").parent('.txt-block').hide();
 			
 			//Move copy of writer/director/castandcrew to sidebar
-			$('td#img_primary').prepend(castCrew);
-			$('td#img_primary').prepend(writerCreator);
-			$('td#img_primary').prepend(director);
+			// $('td#img_primary').append(director);
+			$('td#img_primary').append(writerCreator);
+			$('td#img_primary').append(castCrew);
+
+			$("#maindetails_sidebar_top #title-overview-widget").prepend($("#maindetails_sidebar_top [itemprop='description']"));
+			$('#maindetails_sidebar_top h1.header').append("<div id=director-box></div>");
+			$('#director-box').append(director);
 			
 			//Disable show/hide functionality
 			//headOnClick = $('.head').attr('onclick');

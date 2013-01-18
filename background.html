@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+
+if (localStorage[imdbState] == undefined) {
+  localStorage[imdbState] = 'less';
+}
+
+var imdbState = localStorage[imdbState];
+
+chrome.extension.onConnect.addListener(function(port) {
+  port.onMessage.addListener(function(msg) {
+    if (msg.whatState == "State")
+    {
+      port.postMessage({theState: imdbState});
+    }
+    else if (msg.changeStateTo == "more")
+    {
+      imdbState = 'more';
+    }
+    else if (msg.changeStateTo == "less")
+    {
+      imdbState = 'less';
+    }
+    localStorage[imdbState] = imdbState;
+  });
+});
+
+</script>

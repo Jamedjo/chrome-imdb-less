@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+
+// Set the imdbOn var on 1st run    
+if (safari.extension.settings.imdbOn != 'on' && safari.extension.settings.imdbOn != 'off') {
+   safari.extension.settings.imdbOn = 'on';
+}    
+ 
+function isOn(event) {
+    var s;
+    if (safari.extension.settings.imdbOn == 'off') {
+        s = false;
+    } else {
+        s = true;
+    }
+    
+    event.target.page.dispatchMessage("theAnswer", s);
+}
+
+function respondToMessage(theMessageEvent) {
+    if(theMessageEvent.name === "isOn")
+    {
+       isOn(theMessageEvent);
+    } else if(theMessageEvent.name == "turnOn") {
+        safari.extension.settings.imdbOn = 'on';
+    } else if (theMessageEvent.name == "turnOff") {
+        safari.extension.settings.imdbOn = 'off';
+    }
+}
+
+safari.application.addEventListener("message",respondToMessage,false);   
+    
+</script>

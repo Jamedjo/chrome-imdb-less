@@ -1,0 +1,710 @@
+/* Hide main content until we finish moving divs around */
+#content-2-wide {
+	opacity: 0;
+}
+div#upfront_navstrip_wrapper,
+div#supertab  {
+	display: none !important;
+}
+/* Display the goods again */
+body.less-imdb-off #content-2-wide,
+body.less-imdb-global #content-2-wide,
+body.less-imdb #content-2-wide {
+	opacity: 1;
+}
+body.less-imdb-off div#upfront_navstrip_wrapper,
+body.less-imdb-off div#supertab  {
+	display: block !important;
+}
+/* Body Background */
+html {
+	background: rgb(179,179,176) !important;
+	background: -moz-linear-gradient(top, rgba(179,179,176,1) 0%, rgba(227,226,221,1) 500px) !important;
+	background: -webkit-linear-gradient(rgba(179,179,176,1) 0%,rgba(227,226,221,1) 500px) !important;
+	background: -ms-linear-gradient(top, rgba(179,179,176,1) 0%,rgba(227,226,221,1) 500px) !important;
+	background: linear-gradient(top, rgba(179,179,176,1) 0%,rgba(227,226,221,1) 500px) !important;
+	background-color: rgb(227,226,221) !important;
+	background-repeat: no-repeat !important;
+}
+body {
+	background-position-y: -9999px !important;
+}
+body.less-imdb #wrapper {
+	background-image: none !important;
+	background-color: transparent !important;
+}
+body.less-imdb-off,
+body.less-imdb {
+	background-position-y: 0% !important;
+}
+body#styleguide-v2.less-imdb-global,
+body#styleguide-v2.less-imdb {
+	background-image: none !important;
+	background: rgb(179,179,176) !important;
+	background: -moz-linear-gradient(top, rgba(179,179,176,1) 0%, rgba(227,226,221,1) 500px) !important;
+	background: -webkit-linear-gradient(rgba(179,179,176,1) 0%,rgba(227,226,221,1) 500px) !important;
+	background: -ms-linear-gradient(top, rgba(179,179,176,1) 0%,rgba(227,226,221,1) 500px) !important;
+	background: linear-gradient(top, rgba(179,179,176,1) 0%,rgba(227,226,221,1) 500px) !important;
+	background-color: rgb(227,226,221) !important;
+	background-repeat: no-repeat !important;
+}
+body.less-imdb-global #root,
+body.less-imdb #root {
+	box-shadow: 0px 0px 8px rgba(0,0,0,.7) !important;
+}
+#pagecontent {
+	overflow: hidden;
+}
+/* Hide menu */
+body.less-imdb h1.header,
+body.less-imdb table#name-overview-widget-layout h1.header {
+	display: block !important;
+	padding: 5px 5px 5px 10px !important;
+	background-color: silver !important;
+	border-bottom: 1px solid #dfdfdf;
+	margin: -10px -12px 10px !important;
+	background-image: 
+	-webkit-gradient(
+		linear, 
+		50% 0%, 
+		50% 100%, 
+		from(#f9f9f9), to(#efefef));
+	background-image:
+		-moz-linear-gradient(0% 100% 90deg,#efefef, #f9f9f9)
+	;
+	background-image: 
+	gradient(
+		linear, 
+		50% 0%, 
+		50% 100%, 
+		from(#f9f9f9), to(#efefef));
+}
+
+body.less-imdb #main_nav {
+	display: none;
+}
+body.less-imdb .nb_extra {
+	display: none;
+}
+div#navbar.navbarSprite {
+	margin-top: 0 !important;
+}
+/* Hide ads */
+body.less-imdb div#top_ad_wrapper,
+body.less-imdb-global div#top_ad_wrapper,
+body.less-imdb .twentyanniversary,
+body.less-imdb-global .twentyanniversary,
+body.less-imdb .fallmoviepreviewdiv,
+body.less-imdb-global .fallmoviepreviewdiv,
+body.less-imdb div#top_ad_wrapper,
+body.less-imdb-global div#top_ad_wrapper,
+body.less-imdb table#amazon-affiliates,
+body.less-imdb-global table#amazon-affiliates,
+body.less-imdb div#eyeDiv,
+body.less-imdb-global div#eyeDiv,
+body.less-imdb #ebStdBanner0,
+body.less-imdb-global #ebStdBanner0,
+body.less-imdb iframe,
+body.less-imdb-global iframe,
+body.less-imdb #cboxOverlay,
+body.less-imdb-global #cboxOverlay,
+body.less-imdb div#maindetails_sidebar_bottom,
+body.less-imdb div#supertab,
+body.less-imdb-global div#supertab,
+body.less-imdb-global div.aux-ad-widget-1,
+body.less-imdb div#upfront_navstrip_wrapper,
+body.less-imdb-global div#upfront_navstrip_wrapper,
+body.less-imdb div#top_rhs_spacer,
+body.less-imdb-global div#top_rhs_spacer  {
+	display: none !important;
+}
+div#top_ad_wrapper {
+	xdisplay: none !important;
+}
+body.less-imdb-off div#upfront_navstrip_wrapper,
+body.less-imdb-off div#top_ad_wrapper {
+	xdisplay: block !important;
+}
+/* Hide articles */
+body.less-imdb div#content-1,
+body.less-imdb div.article {
+	display: none !important;
+}
+
+body.less-imdb #maindetails_sidebar_top div.article.highlighted {
+	display: block !important;
+}
+body.less-imdb .hide {
+	display: none !important;
+}
+/* Show articles we want */
+body.less-imdb div.article.filmography,
+body.less-imdb div.article.bio,
+body.less-imdb div.article.movie,
+body.less-imdb div.article.cast-list,
+body.less-imdb div.article.storyline,
+body.less-imdb div.article.trivia,
+body.less-imdb div.article.details,
+body.less-imdb div.article.writer-director,
+body.less-imdb div.article.season-year,
+body.less-imdb div.article.listo {
+	display: block !important;
+}
+/* Hide sidebar items */
+body.less-imdb div.aux-content-widget-3,
+body.less-imdb div.aux-content-widget-2,
+body.less-imdb div.aux-content-widget-5,
+body.less-imdb div.middle-rhs,
+body.less-imdb div.top-rhs {
+	display: none;
+}
+/* Show sidebar items */
+body.less-imdb .video {
+	display: block !important;
+}
+/* Move Things */
+body.less-imdb div.article.filmography,
+body.less-imdb xdiv.article.cast-list {
+	padding-left: 0;
+	padding-right: 0;
+}
+body.less-imdb div.article.filmography #jumpto {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+body.less-imdb div.article.filmography div.rightcornerlink {
+	padding-right: 10px  !important;
+}
+body.less-imdb img.video {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4px;
+}
+body.less-imdb div#prometer_container {
+	margin: -18px -22px 0 0 !important;
+}
+/* De-tablefy */
+body.less-imdb table#name-overview-widget-layout,
+body.less-imdb table#name-overview-widget-layout tbody,
+body.less-imdb table#name-overview-widget-layout tr,
+body.less-imdb table#name-overview-widget-layout td,
+body.less-imdb table#title-overview-widget-layout,
+body.less-imdb table#title-overview-widget-layout tbody,
+body.less-imdb table#title-overview-widget-layout tr,
+body.less-imdb table#title-overview-widget-layout td {
+	display: block;
+}
+body.less-imdb table#title-overview-widget-layout {
+	border-collapse:collapse !important;
+}
+body.less-imdb div.star-box {
+	width: auto !important;
+	margin-left: -12px !important;
+	margin-right: -12px !important;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+	padding: 20px 20px !important;
+	background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#EDEDED), color-stop(0.49, white)) !important;
+	background: -moz-linear-gradient(0% 90% 90deg,#EDEDED, #FFFFFF) !important;
+	background: gradient(linear, 0% 100%, 0% 0%, from(#EDEDED), color-stop(0.49, white)) !important;
+	border-left: none !important;
+	border-right: none !important;
+}
+body.less-imdb div.star-box-details {
+	width: 270px !important;
+	clear: both;
+}
+body.less-imdb div.star-box-details a {
+	word-break: normal !important;
+}
+body.less-imdb .rating-big {
+	height: 21px;
+	overflow: hidden;
+	margin-bottom: 6px;
+	width: auto !important;
+}
+/* Clean up bio and film overview divs */
+body.less-imdb #warplink{
+	display: none;
+}
+body.less-imdb #resume-teaser {
+	display: block !important;
+	clear: both !important;
+	position: relative !important;
+	float: none !important;
+}
+body.less-imdb #img_primary {
+	padding: 10px 0 2px !important;
+	background-image: 
+	-webkit-gradient(
+		linear,
+		left top,
+		right bottom,
+		color-stop(0, #f9f9f9),
+		color-stop(1, white)
+		);
+	background-image:
+	-moz-linear-gradient(
+   		left top,
+    	rgb(249,249,249) 0%,
+    	rgb(255,255,255) 100%
+	);
+	background-image: 
+	gradient(
+		linear,
+		left top,
+		right bottom,
+		color-stop(0, #f9f9f9),
+		color-stop(1, white)
+		);		
+	margin: 0 -11px;
+	border-top: 1px solid #eef1f1;
+}
+body.less-imdb #img_primary img {
+	display: block;
+	background-color: white;
+	padding: 6px;
+	border: 1px solid #d3d3d3;
+	-webkit-box-shadow: 0px 1px 4px rgba(0,0,0,.2);
+	-moz-box-shadow: 0px 1px 4px rgba(0,0,0,.2);
+	box-shadow: 0px 1px 4px rgba(0,0,0,.2);
+	margin: 0 auto 20px !important;
+}
+body.less-imdb #img_primary a img {
+	-webkit-transition: .15s !important;
+	-moz-transition: .15s !important;
+	transition: .15s !important;
+}
+xbody.less-imdb #img_primary a:hover img {
+	-webkit-transform: perspective(500) rotateY(0deg) rotateZ(0deg) rotateX(2.5deg) scale(1, 1);
+	transform: perspective(500) rotateY(0deg) rotateZ(0deg) rotateX(2.5deg) scale(1, 1);
+	-webkit-transition: .15s !important;
+	transition: .15s !important;
+	border: 1px solid #b0b3b3;
+	-webkit-box-shadow: 0px 10px 10px rgba(0,0,0,.2);
+	-moz-box-shadow: 0px 10px 10px rgba(0,0,0,.2);
+	box-shadow: 0px 10px 10px rgba(0,0,0,.2);
+}
+body.less-imdb #img_primary a:hover img {
+	-webkit-transition: .15s !important;
+	-moz-transition: .15s !important;
+	transition: .15s !important;
+	border: 1px solid #b0b3b3;
+	-webkit-box-shadow: 0px 1px 4px rgba(0,0,0,.4);
+	-moz-box-shadow: 0px 1px 4px rgba(0,0,0,.4);
+	box-shadow: 0px 1px 4px rgba(0,0,0,.4);
+}
+body.less-imdb .writer-director {
+	padding: 0 20px 8px;
+}
+span.nobr {
+	white-space: pre !important;
+}
+/* Remove the rating system. */
+div.star-box-rating-widget {
+	display: none;
+}
+div.star-box-giga-star {
+	display: none !important;
+}
+/* Make it more subtle */
+body.less-imdb div.article,
+body.less-imdb #maindetails_sidebar_top > div {
+	-webkit-border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
+	border-radius: 5px !important;
+	-webkit-box-shadow: 
+		0px 1px 3px rgba(0,0,0,.3),
+		inset -2px -2px 2px white
+		;
+	-moz-box-shadow: 
+		0px 1px 3px rgba(0,0,0,.3),
+		inset -2px -2px 2px white
+		;
+	box-shadow: 
+		0px 1px 3px rgba(0,0,0,.3),
+		inset -2px -2px 2px white
+		;
+	background-image: 
+	-webkit-gradient(
+		linear, 
+		100% 100%, 
+		50% 0%, 
+		from(#f9f9f9), to(white));
+	background-image:
+	-moz-linear-gradient(
+	   right bottom,
+    	rgb(249,249,249) 20%,
+    	rgb(255,255,255) 100%
+	);
+	background-image: 
+	gradient(
+		linear, 
+		100% 100%, 
+		50% 0%, 
+		from(#f9f9f9), to(white));
+	border: 1px solid #ebebeb;
+	border: none !important;
+}
+body.less-imdb div.article  {
+	background: white;
+}
+body.less-imdb .movie .infobar {
+	margin-bottom: 0 !important;
+	word-wrap: normal !important;
+	white-space: pre !important;
+	line-height: 5px !important;
+}
+/* Mediastrip Styles */
+body.less-imdb div.mediastrip {
+	clear: both;
+	padding-top: 20px;
+}
+/* Filmography Styles */
+body.less-imdb div.article {
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+body.less-imdb .txt-block div.article.highlighted {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+body.less-imdb div#filmography > .head {
+	border-bottom: 1px solid #a3a3a3 !important;
+	border-top: 1px solid #c8c8c8 !important;
+	padding-bottom: 7px !important;
+	padding-top: 5px !important;
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#ababab), to(#d9d9d9)) !important;
+	background-image: -moz-linear-gradient(90deg, #ababab 0%, #d9d9d9 100%) !important;
+}
+body.less-imdb div#filmography > .head:hover {
+	border-bottom: 1px solid #8a8a8a !important;
+	border-top: 1px solid #c8c8c8 !important;
+	padding-bottom: 7px !important;
+	padding-top: 5px !important;
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#9d9d9d), to(#dcdcdc)) !important;
+	background-image: -moz-linear-gradient(90deg, #9d9d9d 0%, #dcdcdc 100%) !important;
+}
+body.less-imdb div#filmography > .head:active {
+	border-bottom: 1px solid #8a8a8a !important;
+	border-top: 1px solid #999999 !important;
+	padding-bottom: 7px !important;
+	padding-top: 5px !important;
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#e5e5e5), from(#c8c8c8), to(#aeaeae)) !important;
+	background-image: -moz-linear-gradient(90deg, #e5e5e5 0%, #c8c8c8 0%, #aeaeae 100%) !important;
+}
+body.less-imdb div#filmography div.filmo-row:last-child {
+	border-bottom: none !important;
+}
+body.less-imdb .filmography .rightcornerlink {
+	border: none !important;
+}
+body.less-imdb .filmography .rightcornerlink span {
+	display: none !important;
+}
+/* Awards Styles */
+body.less-imdb #maindetails_sidebar_top div.article.highlighted {
+	background:#EFE3A4;
+	border:6px double rgba(255,255,255,1) !important;
+	margin: 10px -4px 2px !important;
+	padding:8px 12px !important;
+	box-shadow: none;
+	-webkit-border-radius: 10px !important;
+}
+/* Cast List */
+body.less-imdb .cast_list tr {
+	border: none !important;
+}
+body.less-imdb td.castlist_label {
+	padding-bottom: 10px  !important;
+	font-size: 11px  !important;
+}
+/* TV Series styles */
+body.less-imdb div.article.season-year {
+	margin-bottom: -10px !important;
+}
+/* Typography */
+body.less-imdb h2 {
+	color: #3f3f3f !important;
+	text-shadow: white 0 1px 0;
+	font-size: 18px !important;
+}
+body.less-imdb h3 {
+	color: #3f3f3f !important;
+	text-shadow: white 0 1px 0;
+	font-size: 14px !important;
+}
+body.less-imdb hr {
+	border-style: solid;
+	border-color: #e1e1e1 !important;
+}
+body.less-imdb .see-more {
+	border-style: none !important;
+}
+body.less-imdb div#filmography > .head,
+body.less-imdb div#filmography > .head:hover,
+body.less-imdb div#filmography > .head a,
+body.less-imdb div#filmography > .head a:hover {
+	color: #3f3f3f !important;
+	xtext-shadow: #c0c1c1 0 1px 0  !important;
+	text-shadow: none  !important;
+	font-size: 11px  !important;
+}
+body.less-imdb div#filmography > .head a,
+body.less-imdb div#filmography > .head a:hover {
+	font-size: 15px !important;
+}
+body.less-imdb #content-2-wide a:link {
+	text-decoration: none !important;
+}
+body.less-imdb #content-2-wide a:hover {
+	color: #143f6c !important;
+}
+body.less-imdb .spin {
+	-webkit-transition: .75s .5s !important;
+	-moz-transition: .75s .5s !important;
+	transition: .75s .5s !important;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+body.less-imdb .spin-hover:hover .spin {
+	-webkit-transition: .75s !important;
+	-moz-transition: .75s !important;
+	transition: .75s !important;
+	-webkit-transform: perspective(99999) rotateY(180deg);
+	transform: perspective(99999) rotateY(180deg);
+}
+body.less-imdb div#pageContent {
+	overflow: hidden !important;
+	display: none !important;
+}
+body.less-imdb #content-2-wide {
+}
+body.less-imdb div#jumpto {
+	padding-left: 0 !important;
+}
+body.less-imdb div#maindetails_sidebar_top {
+	float: left !important;
+	margin-left: 20px;
+}
+body.less-imdb div#maindetails_center_bottom {
+	margin-top: 0px !important;
+}
+body.less-imdb div.maindetails_center {
+	margin-left: 0 !important;
+}
+body.less-imdb div#maindetails_center_top {
+	display: none;
+}
+
+body.less-imdb div#maindetails_center_bottom {
+	float: left;
+	margin-top: 0;
+}
+/* ON/Off */
+#less-imdb-control {
+	color: white;
+	background-color: rgba(0,0,0,.8);
+	position: fixed;
+	top: 0;
+	display: block;
+	font: 9px/0 Verdana, Tahoma, "Lucida Grande", Lucida, sans-serif;
+	z-index: 999;
+	-webkit-box-shadow: 
+		0px 1px 3px rgba(0,0,0,.4),
+		inset 0px 1px 5px rgba(0,0,0,.6);
+	-moz-box-shadow: 
+		-3px 1px 3px rgba(0,0,0,.4),
+		inset 0px 1px 5px rgba(0,0,0,.6);
+	box-shadow: 
+		0px 1px 3px rgba(0,0,0,.4),
+		inset 0px 1px 5px rgba(0,0,0,.6);
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border-bottom-left-radius: 6px;
+	text-shadow: #000000 0 1px 0;
+	-webkit-transition: .25s ease-in-out .5s;
+	-moz-transition: .25s ease-in-out .5s;
+	transition: .25s ease-in-out .5s;
+	opacity: .5;
+	-webkit-user-select: none;
+	right: 0;
+	height: 23px;
+	overflow: hidden;
+	-webkit-background-clip: padding-box !important;
+	background-clip: padding-box !important;
+}
+#less-imdb-control:hover {
+	-webkit-transition: .15s ease-in-out;
+	-moz-transition: .15s ease-in-out;
+	transition: .15s ease-in-out;
+	opacity: 1; /* webkit only */
+	padding-right: 88px; /* webkit only */
+	cursor: pointer;
+}
+.webkit #less-imdb-control:hover {
+	opacity: 1; /* Safari only */
+	padding-right: 88px; /* Safari only */
+}
+#imdb-controls {
+	position: absolute;
+	width: 91px;
+	overflow: hidden;
+	top: 0;
+	left: 60px;
+	height: 23px;
+}
+#less-imdb-control .label {
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 0 5px 6px 7px;
+	color: black;
+	text-shadow: #ded397 0 1px 0;
+	position: relative;
+	font: bold 9px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	border: 1px solid #c69a3b;
+	border-top: 1px solid #ded397;
+	top: 0;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: block;
+	background: url(chrome-extension://necddehinbndjblnhmgcodpobjfpblle/less-imdb-control-icon.png) no-repeat left top;
+	width: 46px;
+	height: 15px;
+}
+.imdb-toggle {
+	border-top: 1px solid rgba(0,0,0,1);
+	border-bottom: 1px solid rgba(0,0,0,1);
+	display: block;
+	padding: 9px 8px 5px;
+	background-image: 
+	-webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgba(0,0,0,.5)),
+		color-stop(0.83, rgba(71,71,71,.2))
+	);
+	background-image:
+	-moz-linear-gradient(
+	    center bottom,
+	    rgba(0,0,0,.5) 0%,
+	    rgba(71,71,71,.2) 83%
+	);
+	background-image: 
+	gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgba(0,0,0,.5)),
+		color-stop(0.83, rgba(71,71,71,.2))
+	);
+	width: 28px;
+	height: 7px;
+}
+.imdb-toggle:hover {
+	cursor: pointer;
+	background-image: 
+	-webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgba(0,0,0,1)),
+		color-stop(0.83, rgba(71,71,71,.5))
+	) !important;
+	background-image:
+	-moz-linear-gradient(
+	    center bottom,
+	    rgba(0,0,0,1) 0%,
+	    rgba(71,71,71,.5) 83%
+	) !important;
+	background-image: 
+	gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgba(0,0,0,1)),
+		color-stop(0.83, rgba(71,71,71,.5))
+	) !important;
+}
+.imdb-toggle:active {
+	background-image: 
+		-webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgba(0,0,0,1)),
+			color-stop(0.83, rgba(0,0,0,.1))
+		) !important;
+	background-image:
+		-moz-linear-gradient(
+		    center bottom,
+		    rgba(0,0,0,1) 0%,
+		    rgba(0,0,0,.1) 83%
+		) !important;
+	background-image: 
+		gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgba(0,0,0,1)),
+			color-stop(0.83, rgba(0,0,0,.1))
+		) !important;
+}
+
+#on {
+	padding-right: 6px;
+	border-right: 1px solid rgba(255,255,255,.1);
+	top: 0;
+	position: absolute;
+	left: 0;
+}
+
+#off {
+	border-left: 1px solid rgba(0,0,0,.6);
+	left: 43px;
+	top: 0;
+	position: absolute;
+}
+.radio-outer {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid black;
+	padding: 2px;
+	margin-left: 4px;
+	-webkit-box-shadow: 0px 1px 1px rgba(100,100,100,1);
+	-moz-box-shadow: 0px 1px 1px rgba(100,100,100,1);
+	box-shadow: 0px 1px 1px rgba(100,100,100,1);
+	margin-top: -4px;
+	position: absolute;
+	top: 8px;
+	right: 6px;
+}
+.radio-inner {
+	display: inline-block;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width: 5px;
+	height: 5px;
+}
+.imdb-toggle:hover .radio-inner {
+	background-color: rgba(100,100,100,1);
+}
+.selected .radio-outer {
+	opacity: 1 !important;
+}
+.imdb-toggle:active .radio-inner,
+.selected .radio-inner {
+	background-color: white !important;
+	opacity: 1;
+}
